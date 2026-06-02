@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zohsja | DJ & Producer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f0f0f;
+    color:#fff;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.95);
+    padding:15px 25px;
+    z-index:1000;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#7d8cff;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu a:hover{
+    color:#7d8cff;
+}
+
+.mobile-btn{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1571266028243-d220c9d5c0d1?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:5rem;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    font-size:1.4rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    margin:8px;
+    padding:14px 28px;
+    background:#7d8cff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:90px 25px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#7d8cff;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.socials{
+    text-align:center;
+    margin-top:30px;
+}
+
+.socials a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 20px;
+    background:#222;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
+
+@media(max-width:768px){
+
+.mobile-btn{
+    display:block;
+}
+
+.menu{
+    display:none;
+    flex-direction:column;
+    margin-top:15px;
+}
+
+.menu.show{
+    display:flex;
+}
+
+.hero-content h1{
+    font-size:3rem;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+
+<div class="logo">Zohsja</div>
+
+<button class="mobile-btn" onclick="toggleMenu()">☰</button>
+
+<div id="menu" class="menu">
+<a href="#home">Home</a>
+<a href="#about">Over</a>
+<a href="#music">Music</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Zohsja</h1>
+<p>Deep House • Progressive House • DJ & Producer</p>
+
+<a class="btn" href="https://open.spotify.com/artist/5sPzvxuPomBvUlaUrS036G" target="_blank">Spotify</a>
+
+<a class="btn" href="https://www.mixcloud.com/Zohsja/" target="_blank">Mixcloud</a>
+
+<a class="btn" href="https://www.tiktok.com/@zohsja" target="_blank">TikTok</a>
+</div>
+</section>
+
+<section class="section" id="about">
+
+<h2>About Zohsja</h2>
+
+<div class="about">
+
+<img src="djfoto.jpg" alt="Zohsja">
+
+<div>
+<p>
+Zohsja is een Nederlandse DJ en producer met een passie voor Deep House,
+Progressive House en melodische elektronische muziek.
+Via Spotify en Mixcloud deelt hij zijn nieuwste producties,
+persoonlijke releases en zorgvuldig opgebouwde DJ-sets.
+</p>
+
+<br>
+
+<p>
+Van diepe grooves tot emotionele melodies:
+de muziek van Zohsja staat voor sfeer, energie en verbinding op de dansvloer.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="music">
+
+<h2>Listen Now</h2>
+
+<div class="socials">
+
+<a href="https://open.spotify.com/artist/5sPzvxuPomBvUlaUrS036G" target="_blank">
+🎵 Spotify
+</a>
+
+<a href="https://www.mixcloud.com/Zohsja/" target="_blank">
+🎧 Mixcloud
+</a>
+
+<a href="https://www.tiktok.com/@zohsja" target="_blank">
+🎬 TikTok
+</a>
+
+</div>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>Bookings & Contact</h2>
+
+<p>
+Voor boekingen, samenwerkingen en vragen:
+</p>
+
+<br>
+
+<h3>
+<a href="mailto:saschaking@hotmail.com" style="color:#7d8cff;">
+saschaking@hotmail.com
+</a>
+</h3>
+
+</section>
+
+<footer>
+© 2026 Zohsja | Deep House • Progressive House
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
